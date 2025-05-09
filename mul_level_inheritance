@@ -1,0 +1,18 @@
+#Multilevel Inheritance
+class Vehicle:
+    def start(self):
+        return "Vehicle started"
+
+class Car(Vehicle):
+    def drive(self):
+        return "Car driving"
+
+class SportsCar(Car):
+    def accelerate(self):
+        return "Sports car accelerating"
+
+# Example usage
+sports_car = SportsCar()
+print(sports_car.start())       # Output: Vehicle started
+print(sports_car.drive())       # Output: Car driving
+print(sports_car.accelerate())  # Output: Sports car accelerating
